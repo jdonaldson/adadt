@@ -1,0 +1,16 @@
+{
+  "name": "adadt",
+  "license": "MIT",
+  "tags": [
+    "adt",
+    "type",
+    "transform"
+  ],
+  "classPath": "src",
+  "contributors": [
+    "jdonaldson"
+  ],
+  "releasenote": "initial release",
+  "version": "0.0.0",
+  "dependencies": {}
+}
