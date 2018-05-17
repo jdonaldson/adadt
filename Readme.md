@@ -1,4 +1,5 @@
 # ADADT : API-Derived Algebraic Data Types
+[![Build Status](https://travis-ci.org/jdonaldson/adadt.svg?branch=master)](https://travis-ci.org/jdonaldson/adadt)
 
 ADADT is an *API-Derived Algebraic Data Type*.  This type is a common [Algebraic
 Data Type](https://en.wikipedia.org/wiki/Algebraic_data_type) that is boudn to
