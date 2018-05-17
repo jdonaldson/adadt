@@ -23,11 +23,12 @@ class Foo {
 
 The ADADT class contains a
 [@:genericBuild](https://haxe.org/manual/macro-generic-build.html) metadata
-directive that constructs and enum from its type parameter.  You can specify the
+directive that constructs an enum from its type parameter.  You can specify the
 class like so:
 
 ```haxe
 import adadt.*;
+//...
 var some_var : ADADT<Foo>;
 ```
 
