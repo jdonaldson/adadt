@@ -34,5 +34,5 @@ script:
   - haxelib run travix cpp
   - haxelib run travix cs
   - haxelib run travix php
-  - haxelib run travix php7
+  # - haxelib run travix php7
   - haxelib run travix lua
