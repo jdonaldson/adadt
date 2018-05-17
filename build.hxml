@@ -1,0 +1,5 @@
+tests.hxml
+-cp src
+-lua out.lua
+-cmd lua out.lua
+-lib travix
