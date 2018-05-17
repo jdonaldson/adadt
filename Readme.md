@@ -2,13 +2,11 @@
 [![Build Status](https://travis-ci.org/jdonaldson/adadt.svg?branch=master)](https://travis-ci.org/jdonaldson/adadt)
 
 ADADT is an *API-Derived Algebraic Data Type*.  This type is a common [Algebraic
-Data Type](https://en.wikipedia.org/wiki/Algebraic_data_type) that is boudn to
-field and method return types.  In essence, they describe and define every type
-that can be emitted by a public member of a given class.
-
+Data Type](https://en.wikipedia.org/wiki/Algebraic_data_type) that is bound to
+field and method return types.  In essence, ADADTs describe and define every type
+that can be emitted by a public member of an associated class.
 
 To see an ADADT in action, it's necessary to define a simple example class:
-
 
 ```haxe
 class Foo {
@@ -68,17 +66,28 @@ enum FooResult {
 ```
 
 
-It's possible to add additional state this way, and have more
+It's possible to add additional states to an ADADT enum this way, and have more
 control over the name, metadata, and documentation of the resulting type.
 
+Finally, it's also possible to provide a separate alias for the `@:genericBuild`
+class:
 
-ADADT types are useful in a few situations, such as determining the result of a
-routing request.  See [golgi](https://github.com/jdonaldson/golgi) for an
-example of use.
+```haxe
+@:genericBuild(adadt.Build.generic())
+class Alias<T> {}
+
+```
+
+You can now generate an ADADT type def with :
+
+```haxe
+var t : Alias<Foo>;
+```
 
 
-
-
-
+ADADT types are useful when determining the outcome of a result matched against
+an entire class API.  Examples include determining the result of a routing
+request.  See [golgi](https://github.com/jdonaldson/golgi) for an example of
+use.
 
 
